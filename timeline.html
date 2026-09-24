@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>纪念日 &amp; 点点滴滴 · 乐乐和33</title>
+  <meta name="description" content="我们的纪念日倒计时，和一路走来的点点滴滴。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="timeline">
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-heart">♥</span>
+        <span class="brand-text">乐乐 <em>&amp;</em> 33</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="timeline.html">纪念日 &amp; 点滴</a>
+        <a class="nav-link" href="gallery.html">相册</a>
+        <a class="nav-link" href="places.html">我们的足迹</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ 页面横幅 ============ -->
+  <section class="page-hero">
+    <span class="blob blob-1"></span>
+    <div class="container">
+      <h1>重要的日子，和小小的事</h1>
+      <p>「今天」也会变成以后的纪念日，所以都记下来。</p>
+    </div>
+  </section>
+
+  <!-- ============ 纪念日 ============ -->
+  <section class="section" id="anniversaries">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="section-title">我们的纪念日<span class="dot">.</span></h2>
+        <p class="section-desc">自动计算距离最近的一次还有多久，不用自己数。</p>
+      </div>
+
+      <div class="anni-grid" id="anniGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 时间轴 ============ -->
+  <section class="section section--tint" id="moments">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <h2 class="section-title">点点滴滴<span class="dot">.</span></h2>
+        <p class="section-desc">按时间排序，点标签可以筛选。</p>
+      </div>
+
+      <div class="filter-bar" id="tlFilter"></div>
+      <div class="timeline" id="timelineList"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-main">乐乐 &amp; 33 · 用喜欢的方式，过普通的日子</p>
+      <p class="footer-note">已经一起走过 <span class="js-days">0</span> 天 <span class="footer-heart">♥</span></p>
+      <p class="footer-note">© <span id="year"></span> 本页面仅供两个人自己看</p>
+    </div>
+  </footer>
+
+  <button class="heart-fab" id="heartFab" title="点我看看" aria-label="撒一把小心心">♥</button>
+  <button class="to-top" id="toTop" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

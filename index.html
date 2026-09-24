@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐乐乐&33的小窝</title>
+  <meta name="description" content="乐乐和33的情侣小窝，记录纪念日、日常点滴、相册和一起去过的地方。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-heart">♥</span>
+        <span class="brand-text" data-site-brand>乐乐 <em>&amp;</em> 33</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="timeline.html">纪念日 &amp; 点滴</a>
+        <a class="nav-link" href="gallery.html">相册</a>
+        <a class="nav-link" href="places.html">我们的足迹</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+
+    <div class="container hero-inner">
+      <div class="hero-main">
+        <p class="hero-eyebrow">♥ SINCE <span data-since-text>2026.9.8</span></p>
+        <h1 class="hero-title" data-hero-title>乐乐 <span class="amp">&amp;</span> 33</h1>
+
+        <div class="days-counter">
+          <span class="days-num" id="daysTogether" data-count-to="0">0</span>
+          <span class="days-unit">天</span>
+        </div>
+        <p class="days-caption">
+          我们已经在一起 <span id="daysExact">0</span> 天啦，这是第 <span id="dayIndex">1</span> 个一起的日子。
+        </p>
+
+        <p class="hero-text" data-site-subtitle>记录我们在一起的每一个普通日子</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="timeline.html">看看我们的点滴 →</a>
+          <a class="btn btn-ghost" href="gallery.html">翻翻相册</a>
+        </div>
+
+        <div class="quote-box"><span id="typewriter"></span></div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="countdown-card">
+          <p class="countdown-label">NEXT ANNIVERSARY</p>
+          <h2 class="countdown-title" id="cdTitle">纪念日</h2>
+          <p class="countdown-date" id="cdDate">--</p>
+
+          <div class="countdown-grid">
+            <div class="countdown-cell"><b id="cdDays">00</b><span>天</span></div>
+            <div class="countdown-cell"><b id="cdHours">00</b><span>时</span></div>
+            <div class="countdown-cell"><b id="cdMins">00</b><span>分</span></div>
+            <div class="countdown-cell"><b id="cdSecs">00</b><span>秒</span></div>
+          </div>
+        </div>
+
+        <div class="avatars" id="avatarBox"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 快捷入口 ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <h2 class="section-title">我们的四个抽屉<span class="dot">.</span></h2>
+        <p class="section-desc">纪念日、日常、照片和走过的地方，都收在这里。</p>
+      </div>
+
+      <div class="entry-grid">
+        <a class="card entry-card" href="timeline.html" data-reveal>
+          <div class="entry-icon">🗓</div>
+          <h3>纪念日</h3>
+          <p>在一起日子、生日、各种重要的日子</p>
+          <span class="entry-more">去看看 <span>→</span></span>
+        </a>
+
+        <a class="card entry-card" href="timeline.html#moments" data-reveal>
+          <div class="entry-icon">✨</div>
+          <h3>点点滴滴</h3>
+          <p>生活中有趣小事。</p>
+          <span class="entry-more">去看看 <span>→</span></span>
+        </a>
+
+        <a class="card entry-card" href="gallery.html" data-reveal>
+          <div class="entry-icon">📷</div>
+          <h3>相册</h3>
+          <p>照片按类型分类。</p>
+          <span class="entry-more">去看看 <span>→</span></span>
+        </a>
+
+        <a class="card entry-card" href="places.html" data-reveal>
+          <div class="entry-icon">🧭</div>
+          <h3>我们的足迹</h3>
+          <p>一起去过的城市。</p>
+          <span class="entry-more">去看看 <span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 最近点滴 ============ -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="section-title">最近的点点滴滴<span class="dot">.</span></h2>
+        <p class="section-desc">挑了几件最近发生的小事给你看。</p>
+      </div>
+
+      <div class="mini-list" id="recentList"></div>
+
+      <div style="margin-top:30px" data-reveal>
+        <a class="btn btn-ghost" href="timeline.html">查看全部时间轴 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 相册预览 ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="section-title">随手拍的几张<span class="dot">.</span></h2>
+        <p class="section-desc">点一下可以放大（相册里还有更多）。</p>
+      </div>
+
+      <div class="preview-grid" id="previewGrid"></div>
+
+      <div style="margin-top:30px" data-reveal>
+        <a class="btn btn-primary" href="gallery.html">进入完整相册 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-main" data-site-footer>乐乐 &amp; 33 · 用喜欢的方式，过普通的日子</p>
+      <p class="footer-note">
+        已经一起走过 <span id="footerDays">0</span> 天 <span class="footer-heart">♥</span>
+      </p>
+      <p class="footer-note">© <span id="year"></span> 本页面仅供两个人自己看</p>
+    </div>
+  </footer>
+
+  <!-- ============ 悬浮按钮 ============ -->
+  <button class="heart-fab" id="heartFab" title="点我看看" aria-label="撒一把小心心">♥</button>
+  <button class="to-top" id="toTop" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

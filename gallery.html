@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐乐和33</title>
+  <meta name="description" content="乐乐和33的相册，按类型分类，点开可全屏查看。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-heart">♥</span>
+        <span class="brand-text">乐乐 <em>&amp;</em> 33</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="timeline.html">纪念日 &amp; 点滴</a>
+        <a class="nav-link" href="gallery.html">相册</a>
+        <a class="nav-link" href="places.html">我们的足迹</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <div class="container">
+      <h1>我们的相册</h1>
+      <p>共 <span class="js-photo-count">0</span> 张照片 · 点击任意一张放大，支持键盘 ← → 切换</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:56px">
+    <div class="container">
+      <div class="filter-bar" id="galFilter"></div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <p class="tl-empty" id="galEmpty" hidden>这里还没有照片，去 js/data.js 里加上吧～</p>
+    </div>
+  </section>
+
+  <!-- ============ 灯箱 ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片查看">
+    <button class="lb-close" id="lbClose" aria-label="关闭">✕</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="上一张">‹</button>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="下一张">›</button>
+
+    <div class="lb-stage">
+      <img class="lb-img" id="lbImg" src="" alt="">
+      <p class="lb-title" id="lbTitle"></p>
+      <p class="lb-meta" id="lbMeta"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-main">乐乐 &amp; 33 · 用喜欢的方式，过普通的日子</p>
+      <p class="footer-note">已经一起走过 <span class="js-days">0</span> 天 <span class="footer-heart">♥</span></p>
+      <p class="footer-note">© <span id="year"></span> 本页面仅供两个人自己看</p>
+    </div>
+  </footer>
+
+  <button class="heart-fab" id="heartFab" title="点我看看" aria-label="撒一把小心心">♥</button>
+  <button class="to-top" id="toTop" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
