@@ -74,7 +74,7 @@ window.COUPLE = {
     { src: 'images/firstToNc.jpg', title: '第一次去南昌', date: '2026-09-18', category: '旅行' },
     { src: 'images/pingdou.jpg', title: '第一次拼豆', date: '2026-09-20', category: '日常' },
     { src: 'images/33_2.jpg', title: '33美照', date: '2025-01', category: '宝宝' },
-    { src: 'images/p7.svg', title: '团子到家第一天', date: '2024-06-15', category: '宝宝' },
+    { src: 'images/le_1.jpg', title: '男嘉宾登场', date: '2026-09-18', category: '乐乐' },
     { src: 'images/p8.svg', title: '一起看的第一场雪', date: '2025-01-12', category: '日常' },
     { src: 'images/p1.svg', title: '深夜的宵夜', date: '2024-03-08', category: '日常' },
     { src: 'images/p3.svg', title: '海边的小脚丫', date: '2023-08-16', category: '旅行' },
