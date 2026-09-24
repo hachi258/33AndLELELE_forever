@@ -82,7 +82,6 @@ window.COUPLE = {
     { src: 'images/p7.svg', title: '团子长大了', date: '2025-02-01', category: '宝宝' }
   ],
 
-
   /* ---------- 6. 去过的地方 · 足迹 ---------- */
   places: [
     {
