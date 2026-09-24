@@ -27,7 +27,7 @@ window.COUPLE = {
    *  emoji 用任意 emoji 即可。
    */
   anniversaries: [
-    { date: '2026-9-8', title: '在一起的纪念日', emoji: '💙', note: '每年都要认真过的日子' },
+    { date: '9-8', title: '在一起的纪念日', emoji: '💙', note: '每年都要认真过的日子' },
     { date: '2018', title: '我们认识的那天', note: '第一次说话，都很害羞' },
     { date: '02-9', title: '33 的生日', emoji: '🎂', note: '记得提前订蛋糕' },
     { date: '02-5', title: '乐乐的生日', emoji: '🎁', note: '他嘴上说不用买礼物' },
