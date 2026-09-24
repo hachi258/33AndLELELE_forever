@@ -72,8 +72,8 @@ window.COUPLE = {
    */
   gallery: [
     { src: 'images/firstToNc.jpg', title: '第一次去南昌', date: '2026-09-18', category: '旅行' },
-    { src: 'images/33_2.jpg', title: '33美照', date: '2025-01', category: '宝宝' },
-    { src: 'images/le_1.jpg', title: '男嘉宾登场', date: '2026-09-18', category: '乐乐' },
+    { src: 'images/33/33_2.jpg', title: '33美照', date: '2025-01', category: '宝宝' },
+    { src: 'images/LE/le_1.jpg', title: '男嘉宾登场', date: '2026-09-18', category: '乐乐' },
      { src: 'images/yrxs.jpg', title: '我俩第一次吃野人先生，买一送一', date: '2026-9-18', category: '美食' },
     { src: 'images/pingdou.jpg', title: '第一次拼豆', date: '2026-09-20', category: '日常' },
     { src: 'images/p1.svg', title: '深夜的宵夜', date: '2024-03-08', category: '日常' },
