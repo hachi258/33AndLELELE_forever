@@ -61,7 +61,7 @@ window.COUPLE = {
     {
       date: '2026-09-25',
       title: '第二次一起旅行',
-      tag: '日常',
+      tag: '旅行',
       text: '33想去合肥看演出，第一次两个人一起过中秋节。'
     },
   ],
@@ -88,7 +88,7 @@ window.COUPLE = {
       city: '南昌',
       region: '江西',
       date: '2026-09-18',
-      cover: 'images/p2.svg',
+      cover: 'images/nc1.jpg',
       note: '第一次一起旅行，时隔多年再次见面，小乐很爱33。',
       //tags: ['第一次', '南昌之眼']
     },
@@ -98,6 +98,13 @@ window.COUPLE = {
       date: '2022-04-05',
       cover: 'images/p6.svg',
       note: '还没开始呢',
+    },
+    {
+      city: '吉首',
+      region: '湖南',
+      date: '长大的地方',
+      cover: 'images/p6.svg',
+      note: '家在的地方',
     },
 
   ],
