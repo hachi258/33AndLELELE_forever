@@ -55,7 +55,7 @@ window.COUPLE = {
       title: '第一次一起旅行',
       tag: '旅行',
       text: '小乐坐了3个小时的高铁去南昌找33。',
-      image: 'images/firstToNc.jpg'
+      image: 'images/trip/firstToNc.jpg'
     },
     
     {
