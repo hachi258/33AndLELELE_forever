@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我们的足迹 · 乐乐和33</title>
+  <meta name="description" content="乐乐和33一起去过的城市和那些地方发生的小故事。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="places">
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-heart">♥</span>
+        <span class="brand-text">乐乐 <em>&amp;</em> 33</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="timeline.html">纪念日 &amp; 点滴</a>
+        <a class="nav-link" href="gallery.html">相册</a>
+        <a class="nav-link" href="places.html">我们的足迹</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <div class="container">
+      <h1>我们的足迹</h1>
+      <p>一起去过的地方，都是我们的「老地方」。</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:50px">
+    <div class="container">
+      <div class="stat-grid" id="statGrid"></div>
+      <div class="filter-bar" id="placeFilter"></div>
+      <div class="place-grid" id="placeGrid"></div>
+      <p class="tl-empty" id="placeEmpty" hidden>还没有记录去过的城市，去 js/data.js 里添加吧～</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-main">乐乐 &amp; 33 · 用喜欢的方式，过普通的日子</p>
+      <p class="footer-note">还想和你去很多地方 <span class="footer-heart">♥</span></p>
+      <p class="footer-note">© <span id="year"></span> 本页面仅供两个人自己看</p>
+    </div>
+  </footer>
+
+  <button class="heart-fab" id="heartFab" title="点我看看" aria-label="撒一把小心心">♥</button>
+  <button class="to-top" id="toTop" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
